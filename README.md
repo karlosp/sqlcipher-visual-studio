@@ -1,4 +1,4 @@
-SQLCipher for Visual Studio x32 and x64
+SQLCipher for Visual Studio, building platforms x32 and x64
 ===========================
 
 [sqlcipher-visual-studio][] is a simple port of the open-source [SQLCipher][]
@@ -19,11 +19,11 @@ Versions
 
 and has been successfully built with the following versions of OpenSSL:
 
-   * [Win32 OpenSSL v1.0.1j](http://slproweb.com/download/Win32OpenSSL-1_0_1j.exe) 
-   * [Win64OpenSSL v1.0.1j](http://slproweb.com/download/Win64OpenSSL-1_0_1j.exe)
-   
- The easiest way to manualy update with new version of SQLite or sqlcipher.
- ------
+  * [Win32 OpenSSL v1.0.1j](http://slproweb.com/download/Win32OpenSSL-1_0_1j.exe) 
+  * [Win64OpenSSL v1.0.1j](http://slproweb.com/download/Win64OpenSSL-1_0_1j.exe)
+
+The easiest way to manualy update with new version of SQLite or sqlcipher.
+--------
  On linux or Cygwin run following commans:
   * git clone https://github.com/sqlcipher/sqlcipher.git
   * cd sqlcipher
@@ -40,7 +40,7 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite>
 </pre>
 
-Now  copy following source files from current direcotery -> to  sqlcipher-visual-studio clone direcotry:
+Now  copy following source files from current direcotery (linux / Cygwin) -> to sqlcipher-visual-studio clone direcotry:
   * shell.c 		-> Shell/src
   * sqlite3.h 	-> StaticLib/inc
   * sqlite3.c 	-> StaticLib/src
@@ -55,3 +55,9 @@ Copy/paste following lines to beggining of file sqlite3.c
 #define SQLITE_TEMP_STORE  2
 /******** END SQLCIPHER-WINDOWS **********/
 </pre>
+
+Now you can build solution in Visual Studio.
+
+Why are included OpenSSL headers and libraries?
+--------
+Because I just want to work EVERYTHING out of the box ;)
