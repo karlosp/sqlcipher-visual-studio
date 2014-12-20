@@ -1,4 +1,4 @@
-SQLCipher for Visual Studio x32 and x64
+SQLCipher for Visual Studio, building platforms x32 and x64
 ===========================
 
 [sqlcipher-visual-studio][] is a simple port of the open-source [SQLCipher][]
@@ -57,3 +57,7 @@ Copy/paste following lines to beggining of file sqlite3.c
 </pre>
 
 Now you can build solution in Visual Studio.
+
+Why are included OpenSSL headers and libraries?
+--------
+Because I just want to work EVERYTHING out of the box ;)
