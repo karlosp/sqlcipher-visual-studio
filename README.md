@@ -55,3 +55,5 @@ Copy/paste following lines to beggining of file sqlite3.c
 #define SQLITE_TEMP_STORE  2
 /******** END SQLCIPHER-WINDOWS **********/
 </pre>
+
+Now you can build solution in Visual Studio.
