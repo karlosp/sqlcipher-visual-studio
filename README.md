@@ -40,7 +40,7 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite>
 </pre>
 
-Now  copy following source files from current direcotery -> to  sqlcipher-visual-studio clone direcotry:
+Now  copy following source files from current direcotery (linux / Cygwin) -> to sqlcipher-visual-studio clone direcotry:
   * shell.c 		-> Shell/src
   * sqlite3.h 	-> StaticLib/inc
   * sqlite3.c 	-> StaticLib/src
