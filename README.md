@@ -27,8 +27,7 @@ and has been successfully built with the following versions of OpenSSL:
  On linux or Cygwin run following commans:
   * git clone https://github.com/sqlcipher/sqlcipher.git
   * cd sqlcipher
-  * ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" \
-    LDFLAGS="/opt/local/lib/libcrypto.a"
+  * ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" 
   * make
 
 If everything went OK, you should be able to run sqlcipher with following command: ./sqlipher and you will get output like:
@@ -40,16 +39,17 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite>
 
 Now  copy following source files from current direcotery -> to  sqlcipher-visual-studio clone direcotry:
-shell.c 		-> Shell/src
-sqlite3.h 	-> StaticLib/inc
-sqlite3.c 	-> StaticLib/src
+  * shell.c 		-> Shell/src
+  * sqlite3.h 	-> StaticLib/inc
+  * sqlite3.c 	-> StaticLib/src
 
 And the final step:
 Copy/paste following lines to beggining of file sqlite3.c
-
+<pre>
 /******** BEGIN SQLCIPHER-WINDOWS ********/
 #define SQLITE_ENABLE_COLUMN_METADATA
 #define SQLITE_ENABLE_UNLOCK_NOTIFY
 #define SQLITE_HAS_CODEC
 #define SQLITE_TEMP_STORE  2
 /******** END SQLCIPHER-WINDOWS **********/
+</pre>
