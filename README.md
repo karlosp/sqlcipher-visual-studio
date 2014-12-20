@@ -19,11 +19,11 @@ Versions
 
 and has been successfully built with the following versions of OpenSSL:
 
-   * [Win32 OpenSSL v1.0.1j](http://slproweb.com/download/Win32OpenSSL-1_0_1j.exe) 
-   * [Win64OpenSSL v1.0.1j](http://slproweb.com/download/Win64OpenSSL-1_0_1j.exe)
-   
+  * [Win32 OpenSSL v1.0.1j](http://slproweb.com/download/Win32OpenSSL-1_0_1j.exe) 
+  * [Win64OpenSSL v1.0.1j](http://slproweb.com/download/Win64OpenSSL-1_0_1j.exe)
+
  The easiest way to manualy update with new version of SQLite or sqlcipher.
- ------
+--------
  On linux or Cygwin run following commans:
   * git clone https://github.com/sqlcipher/sqlcipher.git
   * cd sqlcipher
